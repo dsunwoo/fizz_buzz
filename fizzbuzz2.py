@@ -10,13 +10,13 @@ else:
     print(clim)
 # Check to see if limit is a number
 try:
-    clim/1
+    int(clim)/1
 except TypeError:
     print("Please enter an integer value")
     clim=input("Enter number to count to (no spaces): ")
 
 # Start Main
-print("Fizz counting up to {0}".format(clim))
+print("Fizz counting up to {}".format(clim))
 
 #Fizz Buzz Logic below
 for n in range (1,int(clim)+1):
